@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: burger_map_production
-  username: burger_map
-  password: <%= ENV['BURGER_MAP_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
