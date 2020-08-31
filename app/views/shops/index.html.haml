@@ -1,0 +1,10 @@
+=render 'modules/header'
+.main
+  .shops
+    =render 'modules/side_bar'
+
+    .main-shop
+      -@shops.each do |shop|
+        .shop
+          = image_tag shop.image.url
+=render 'modules/footer'
